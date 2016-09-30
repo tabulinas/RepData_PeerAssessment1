@@ -34,7 +34,7 @@ The code is:
 
 
 ```{r load data}
-a<-read.csv(file="activity.csv",header=TRUE,sep=",",stringsAsFactors = FALSE)
+a<-read.csv(file=unz("activity.zip","activity.csv"),header=TRUE,sep=",",stringsAsFactors = FALSE)
 a$date<- as.Date(a$date,"%Y-%m-%d")
 tbl_df(a)
 
@@ -167,7 +167,7 @@ ggplot(data = df.to.plot, aes(x=date, y=value)) +
 
 ##Are there differences in activity patterns between weekdays and weekends?
 
-Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day
+Create a new factor variable in the dataset with two levels â€“ â€œweekdayâ€ and â€œweekendâ€ indicating whether a given date is a weekday or weekend day
 
 ```{r}
 impute.na <- impute.na %>% 
