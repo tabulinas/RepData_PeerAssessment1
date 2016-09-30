@@ -77,7 +77,7 @@ barplot(number.steps.per.day, space=1,
         ylim=c(0,25000), col="pink")
 ```
 
-![](Capstone1_reproducible_files/figure-html/steps per day with NA-1.png)<!-- -->
+![](steps per day with NA-1.png)<!-- -->
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -108,7 +108,7 @@ plot(intervals,average.per.interval, type = "l",col="blue",
      xlab="5-minute intervals",ylab="average number of steps taken, averaged across all days")
 ```
 
-![](Capstone1_reproducible_files/figure-html/average daily activity pattern plot-1.png)<!-- -->
+![](average daily activity pattern plot-1.png)<!-- -->
 
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps
@@ -164,7 +164,7 @@ barplot(number.steps.per.day.na.imputed, space=1,
         ylim=c(0,25000), col="magenta")
 ```
 
-![](Capstone1_reproducible_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](unnamed-chunk-5-1.png)<!-- -->
 
 Calculate and report the mean and median total number of steps taken per day
 
@@ -207,7 +207,7 @@ ggplot(data = df.to.plot, aes(x=date, y=value)) +
   labs(x="day",y="number of steps")
 ```
 
-![](Capstone1_reproducible_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](unnamed-chunk-7-1.png)<!-- -->
 
 
 
@@ -267,5 +267,5 @@ ggplot(data = average.weekday, aes(x=interval, y=m, col=weekend)) +
   labs(x="5-minute intervals",y="average number of steps taken")
 ```
 
-![](Capstone1_reproducible_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](unnamed-chunk-9-1.png)<!-- -->
 
